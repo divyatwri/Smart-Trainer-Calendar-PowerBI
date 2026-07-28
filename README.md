@@ -149,24 +149,6 @@ Relationships:
 
 This model helps the report respond correctly to filters, slicers and date selections.
 
-## Screenshots
-
-### Trainer Workforce Overview
-
-![Trainer Workforce Overview](screenshot/Capture%201.PNG)
-
-### Trainer Calendar
-
-![Trainer Calendar](screenshot/Capture%202.PNG)
-
-### Trainer 360 Profile
-
-![Trainer 360 Profile](screenshot/Capture%203.PNG)
-
-### Schedule Control Centre
-
-![Schedule Control Centre](screenshot/Capture.PNG)
-
 ## Files Included
 
 * Power BI report file
