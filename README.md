@@ -2,30 +2,30 @@
 
 ## Project Overview
 
-This project is an interactive Power BI report designed to simplify trainer scheduling, availability tracking and workforce planning.
+This project is an interactive Power BI report designed to support trainer scheduling, availability tracking and workforce planning.
 
-The report converts daily trainer scheduling data into a clear visual planning solution where users can monitor trainer availability, confirmed engagements, tentative bookings, preparation work, internal work, leave and weekly offs in one place.
+The report converts daily trainer calendar data into a structured planning solution where users can monitor trainer availability, confirmed engagements, tentative bookings, preparation work, internal work, leave and weekly offs in one place.
 
 ## Objective
 
-The objective of this project is to build a practical workforce scheduling report that helps users answer key planning questions such as:
+The objective of this project is to create a clear and practical scheduling report that helps in understanding:
 
-* Which trainers are available for assignment?
-* Which trainers are already engaged?
-* Which bookings are confirmed, tentative or open?
-* What is the workload and utilisation of each trainer?
-* Which trainer is suitable based on specialisation, location and availability?
-* How can scheduling decisions be made faster and more clearly?
+* Which trainers are available for assignment
+* Which trainers are already engaged
+* Which dates are reserved or tentative
+* Which trainers are on leave or weekly off
+* How trainer workload and utilisation are distributed
+* How scheduling decisions can be made faster and more effectively
 
 ## Tools Used
 
 * Power BI
 * DAX
-* Data Modelling
 * Power Query
+* Data Modelling
 * Calendar Visual
 * Slicers and Interactive Filters
-* Excel / Sample Data
+* Excel
 
 ## Report Pages
 
@@ -40,7 +40,7 @@ The Power BI report includes four main pages:
 
 ### 1. Trainer Workforce Overview
 
-The overview page provides a high-level summary of trainer availability, engagement, leave and utilisation.
+The overview page provides a high-level summary of trainer workforce status.
 
 It includes:
 
@@ -56,9 +56,9 @@ It includes:
 
 ### 2. Trainer Calendar
 
-The Trainer Calendar page provides a month-wise view of each trainer’s daily schedule.
+The Trainer Calendar page provides a monthly view of trainer schedules.
 
-It tracks statuses such as:
+It tracks different trainer statuses such as:
 
 * Available
 * Engaged
@@ -68,11 +68,11 @@ It tracks statuses such as:
 * On Leave
 * Weekly Off
 
-This page helps users quickly understand when a trainer is available, occupied or blocked for other work.
+This page helps users quickly identify whether a trainer is available, occupied, reserved or blocked on a specific date.
 
 ### 3. Trainer 360 Profile
 
-The Trainer 360 page gives a complete profile view of a selected trainer.
+The Trainer 360 page provides a detailed profile view of a selected trainer.
 
 It includes:
 
@@ -92,7 +92,7 @@ It includes:
 
 ### 4. Schedule Control Centre
 
-The Schedule Control Centre provides a detailed scheduling table for operational review.
+The Schedule Control Centre provides a detailed operational view of trainer schedules.
 
 It includes:
 
@@ -107,11 +107,11 @@ It includes:
 * Delivery mode
 * Venue city
 
-This page helps in tracking confirmed, tentative, open and blocked schedules in a structured format.
+This page helps review confirmed, tentative, open and blocked schedules in a structured format.
 
-## Important Measures
+## Key Measures
 
-The report uses DAX measures for accurate and interactive analysis.
+The report uses DAX measures for dynamic and responsive analysis.
 
 Key measures include:
 
@@ -126,11 +126,11 @@ Key measures include:
 
 ## Trainer Utilisation Logic
 
-Trainer utilisation is calculated based on engaged days compared to working capacity days.
+Trainer utilisation is calculated by comparing engaged days with working capacity days.
 
 Working capacity excludes non-working days such as weekly offs and leave.
 
-This helps show how much of a trainer’s available working capacity is actually used for confirmed engagements.
+This helps show how much of a trainer’s workable capacity is actually used for confirmed engagements.
 
 ## Data Model
 
@@ -144,17 +144,38 @@ Main tables used:
 
 Relationships:
 
-* Dim_Date is connected to Fact_TrainerCalendar using Calendar Date
-* Dim_Trainer is connected to Fact_TrainerCalendar using Trainer ID
+* Dim_Date is connected with Fact_TrainerCalendar using Calendar Date
+* Dim_Trainer is connected with Fact_TrainerCalendar using Trainer ID
 
-This model helps the report respond correctly to filters, slicers and date selections.
+This model allows the report to respond correctly to slicers, filters and date selections.
+
+## Screenshots
+
+### Trainer Workforce Overview
+
+![Trainer Workforce Overview](Trainer%20Workforce%20Overview.PNG)
+
+### Trainer Calendar
+
+![Trainer Calendar](Trainers%20calender.PNG)
+
+### Trainer 360 Profile
+
+![Trainer 360 Profile](Trainers%20360%20performance%20profile.PNG)
+
+### Schedule Control Centre
+
+![Schedule Control Centre](Trainer%20schedule%20control.PNG)
 
 ## Files Included
 
-* Power BI report file
-* Sample Excel data file
-* Report screenshots
-* README documentation
+* `Trainers calendar diviya.pbix` — Power BI report file
+* `Trainer calendar Power bi.xlsx` — Excel data file
+* `Trainer Workforce Overview.PNG` — Overview page screenshot
+* `Trainers calender.PNG` — Trainer Calendar page screenshot
+* `Trainers 360 performance profile.PNG` — Trainer 360 page screenshot
+* `Trainer schedule control.PNG` — Schedule Control page screenshot
+* `README.md` — Project documentation
 
 ## Repository Structure
 
@@ -162,14 +183,12 @@ This model helps the report respond correctly to filters, slicers and date selec
 Smart-Trainer-Calendar-PowerBI/
 │
 ├── README.md
-├── Smart-Trainer-Calendar.pbix
-├── Trainer-Calendar-Sample-Data.xlsx
-│
-└── screenshot/
-    ├── Capture 1.PNG
-    ├── Capture 2.PNG
-    ├── Capture 3.PNG
-    └── Capture.PNG
+├── Trainers calendar diviya.pbix
+├── Trainer calendar Power bi.xlsx
+├── Trainer Workforce Overview.PNG
+├── Trainers calender.PNG
+├── Trainers 360 performance profile.PNG
+└── Trainer schedule control.PNG
 ```
 
 ## Learning Outcomes
@@ -183,7 +202,7 @@ Through this project, I improved my understanding of:
 * Calendar-based reporting
 * Slicer interactions
 * Workforce planning analysis
-* Resource scheduling logic
+* Schedule control logic
 * Business-focused data storytelling
 
 ## Conclusion
